@@ -11,8 +11,12 @@ class Main {
         //uberX.passegenger = 4;
         uberX.setPassenger(4);
 
-        System.out.println("Car License: " + uberX.license);
+        //System.out.println("Car License: " + uberX.license);
         uberX.printDataCar();
+
+        UberVan uberVan = new UberVan("FGH789", new Account("Andres Herrera", "AND123"));
+        uberVan.setPassenger(6);
+        uberVan.printDataCar();
 
         /************************* */
         /** Segundo objeto car */
