@@ -16,6 +16,6 @@ public class Car {
 
     /** Método para imprimir los datos de la clase */
     void printDataCar(){
-        System.out.println("License: " + license + " Driver: " + driver.name);
+        System.out.println("License: " + license + " Driver: " + driver.name + " Passengers: " + passegenger);
     }
 }
