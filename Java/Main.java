@@ -8,7 +8,8 @@ class Main {
          * de la clase Car y Account
         */
         UberX uberX = new UberX("AMQ123", new Account("Andres Herrera", "AND123"), "Chevrolet", "Sonic");
-        uberX.passegenger = 4;
+        //uberX.passegenger = 4;
+        uberX.setPassenger(4);
 
         System.out.println("Car License: " + uberX.license);
         uberX.printDataCar();

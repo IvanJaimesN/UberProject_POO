@@ -5,7 +5,7 @@ public class Car {
     Integer id;
     String license;
     Account driver;   /** driver hereda de la clase Account */
-    Integer passegenger;
+    private Integer passegenger;
 
     /** Método Constructor */
     public Car(String license, Account driver){ /** license y driver son variables locales */
@@ -16,6 +16,20 @@ public class Car {
 
     /** Método para imprimir los datos de la clase */
     void printDataCar(){
+        if(passegenger != null){
         System.out.println("License: " + license + " Driver: " + driver.name + " Passengers: " + passegenger);
+        }
+    }
+
+    public Integer getPassenger(){
+        return passegenger;
+    }
+
+    public void setPassenger(Integer passenger){
+        if(passenger == 4){
+            this.passegenger = passenger;
+        }else{
+            System.out.println("Necesitas asignar 4 pasajeros");
+        }
     }
 }
